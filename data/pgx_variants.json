@@ -1,0 +1,142 @@
+{
+  "_meta": {
+    "description": "Curated pharmacogenomic variants with CPIC-documented chemotherapy toxicity risk. Based on publicly published CPIC guidelines (cpicpgx.org).",
+    "genome_build": "hg38",
+    "version": "1.0-2026-07",
+    "disclaimer": "This tool is a research/screening aid, not a diagnostic device. All flagged results must be confirmed by a certified clinical pharmacogenomics lab and interpreted by a qualified oncologist/clinical pharmacist before any dosing decision."
+  },
+  "genes": [
+    {
+      "gene": "DPYD",
+      "drug_class": "Fluoropyrimidines",
+      "drugs": ["5-Fluorouracil (5-FU)", "Capecitabine"],
+      "risk_summary": "Reduced DPD enzyme activity causes slow clearance of fluoropyrimidines, leading to severe, potentially fatal toxicity (severe neutropenia, mucositis, diarrhea) at standard doses.",
+      "variants": [
+        {
+          "rsid": "rs3918290",
+          "star_allele": "DPYD*2A",
+          "chrom": "chr1",
+          "pos_hg38": 97450058,
+          "ref": "G",
+          "alt": "A",
+          "effect": "Splice site variant, no functional enzyme",
+          "activity": "no function"
+        },
+        {
+          "rsid": "rs55886062",
+          "star_allele": "DPYD*13",
+          "chrom": "chr1",
+          "pos_hg38": 97515839,
+          "ref": "A",
+          "alt": "C",
+          "effect": "Missense, severely reduced function",
+          "activity": "no function"
+        },
+        {
+          "rsid": "rs67376798",
+          "star_allele": "DPYD c.2846A>T",
+          "chrom": "chr1",
+          "pos_hg38": 97573863,
+          "ref": "A",
+          "alt": "T",
+          "effect": "Missense, reduced function",
+          "activity": "decreased function"
+        },
+        {
+          "rsid": "rs75017182",
+          "star_allele": "DPYD HapB3",
+          "chrom": "chr1",
+          "pos_hg38": 97740410,
+          "ref": "C",
+          "alt": "G",
+          "effect": "Intronic, reduced function haplotype tag",
+          "activity": "decreased function"
+        }
+      ]
+    },
+    {
+      "gene": "TPMT",
+      "drug_class": "Thiopurines",
+      "drugs": ["6-Mercaptopurine", "Azathioprine", "Thioguanine"],
+      "risk_summary": "Reduced TPMT enzyme activity causes toxic accumulation of active thiopurine metabolites, leading to life-threatening bone marrow suppression at standard doses.",
+      "variants": [
+        {
+          "rsid": "rs1800462",
+          "star_allele": "TPMT*2",
+          "chrom": "chr6",
+          "pos_hg38": 18143724,
+          "ref": "C",
+          "alt": "G",
+          "effect": "Missense, no function",
+          "activity": "no function"
+        },
+        {
+          "rsid": "rs1800460",
+          "star_allele": "TPMT*3B",
+          "chrom": "chr6",
+          "pos_hg38": 18130918,
+          "ref": "G",
+          "alt": "A",
+          "effect": "Missense, no function",
+          "activity": "no function"
+        },
+        {
+          "rsid": "rs1142345",
+          "star_allele": "TPMT*3C",
+          "chrom": "chr6",
+          "pos_hg38": 18130687,
+          "ref": "A",
+          "alt": "G",
+          "effect": "Missense, no function",
+          "activity": "no function"
+        }
+      ]
+    },
+    {
+      "gene": "NUDT15",
+      "drug_class": "Thiopurines",
+      "drugs": ["6-Mercaptopurine", "Azathioprine", "Thioguanine"],
+      "risk_summary": "Reduced NUDT15 activity causes toxic accumulation of active thiopurine metabolites; especially important in East and South Asian populations where this variant is more common than TPMT deficiency.",
+      "variants": [
+        {
+          "rsid": "rs116855232",
+          "star_allele": "NUDT15*3",
+          "chrom": "chr13",
+          "pos_hg38": 48037783,
+          "ref": "C",
+          "alt": "T",
+          "effect": "Missense, no function",
+          "activity": "no function"
+        }
+      ]
+    },
+    {
+      "gene": "UGT1A1",
+      "drug_class": "Topoisomerase inhibitors",
+      "drugs": ["Irinotecan"],
+      "risk_summary": "Reduced UGT1A1 enzyme activity causes toxic accumulation of the active irinotecan metabolite (SN-38), leading to severe neutropenia and diarrhea at standard doses.",
+      "variants": [
+        {
+          "rsid": "rs4148323",
+          "star_allele": "UGT1A1*6",
+          "chrom": "chr2",
+          "pos_hg38": 233760498,
+          "ref": "G",
+          "alt": "A",
+          "effect": "Missense, decreased function. Common in East/South Asian populations, often missed by Western-focused panels.",
+          "activity": "decreased function"
+        },
+        {
+          "rsid": "rs35350960",
+          "star_allele": "UGT1A1*28 tag SNP",
+          "chrom": "chr2",
+          "pos_hg38": 233760233,
+          "ref": "A",
+          "alt": "AT",
+          "effect": "Note: true UGT1A1*28 is a TA-repeat indel in the promoter (not always well-captured by standard VCFs); this tag SNP is a partial proxy only.",
+          "activity": "decreased function (proxy, lower confidence)"
+        }
+      ]
+    }
+  ]
+}
